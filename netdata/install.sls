@@ -8,10 +8,10 @@ netdata-prereqs:
       - git
       - libmnl-devel
       - libuuid-devel
-      - lm-sensors
+      - lm_sensors
       - make
       - MySQL-python
-      - nc
+      - nmap-ncat
       - pkgconfig
       - python
       - python-psycopg2
