@@ -72,6 +72,7 @@ netdata-prereqs:
 netdata-repo:
   git.latest:
     - name: https://github.com/netdata/netdata.git
+    - rev: master
     - depth: 100
     - target: /tmp/netdata
 
