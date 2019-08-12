@@ -62,10 +62,10 @@ netdata-prereqs:
       - autoconf-archive
       - autogen
       - automake
-      - pkgconfig
+      - pkgconfig-pkg-config
       - curl
       - findutils
-      - python
+      - python-unversioned-command
 
 {% endif %}
 
