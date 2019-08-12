@@ -1,3 +1,28 @@
+{% if grains['os'] == 'Ubuntu' %}
+
+netdata-prereqs:
+  pkg.installed:
+    - pkgs:
+      - zlib1g-dev
+      - uuid-dev
+      - libuv1-dev
+      - liblz4-dev
+      - libjudy-dev
+      - libssl-dev
+      - libmnl-dev
+      - gcc
+      - make
+      - git
+      - autoconf
+      - autoconf-archive
+      - autogen
+      - automake
+      - pkg-config
+      - curl
+      - python
+
+{% elif grains['os'] == 'CentOS' %}
+
 netdata-prereqs:
   pkg.installed:
     - pkgs:
@@ -17,6 +42,32 @@ netdata-prereqs:
       - pkgconfig
       - python
       - zlib-devel
+
+{% elif grains['os'] == 'Fedora' %}
+
+netdata-prereqs:
+  pkg.installed:
+    - pkgs:
+      - zlib-devel
+      - libuuid-devel
+      - libuv-devel
+      - lz4-devel
+      - Judy-devel
+      - openssl-devel
+      - libmnl-devel
+      - gcc
+      - make
+      - git
+      - autoconf
+      - autoc-nf-marchive
+      - autogen
+      - automake
+      - pkgconfig
+      - curl
+      - findutils
+      - python
+
+{% endif %}
 
 netdata-repo:
   git.latest:
