@@ -59,7 +59,7 @@ netdata-prereqs:
       - make
       - git
       - autoconf
-      - autoc-nf-marchive
+      - autoconf-archive
       - autogen
       - automake
       - pkgconfig
