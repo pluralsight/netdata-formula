@@ -8,20 +8,20 @@ netdata-prereqs:
       - git
       - libmnl-devel
       - libuuid-devel
-      - lm_sensors
+      - openssl-devel
+      - libuv-devel
+      - lz4-devel
+      - Judy-devel
       - make
-      - MySQL-python
-      - nmap-ncat
+      - nc
       - pkgconfig
       - python
-      - python-psycopg2
-      - PyYAML
       - zlib-devel
 
 netdata-repo:
   git.latest:
-    - name: https://github.com/firehol/netdata.git
-    - depth: 1
+    - name: https://github.com/netdata/netdata.git
+    - depth: 100
     - target: /tmp/netdata
 
 netdata-install:
