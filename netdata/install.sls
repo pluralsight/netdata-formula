@@ -38,7 +38,7 @@ netdata-prereqs:
       - lz4-devel
       - Judy-devel
       - make
-      - nc
+      - nmap-ncat
       - pkgconfig
       - python
       - zlib-devel
