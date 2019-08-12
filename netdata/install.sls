@@ -83,3 +83,8 @@ netdata-install:
     - require:
       - git: netdata-repo
       - pkg: netdata-prereqs
+
+netdata:
+  service.running:
+    - require:
+      - cmd: netdata-install
